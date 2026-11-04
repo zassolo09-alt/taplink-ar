@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>AR ROAD LINE</title>
-  <meta name="description" content="AR ROAD LINE — Logistics Company">
+  <title>ABDUMAJID RASHIDOV — AR ROAD LINE</title>
+  <meta name="description" content="Abdumajid Rashidov — AR ROAD LINE firma rahbari. Rasmiy kontaktlar va havolalar.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 48px 20px 40px;
+      padding: 44px 20px 40px;
       letter-spacing: -0.01em;
     }
 
@@ -39,45 +39,51 @@
     /* Profile Section */
     .profile {
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100%;
     }
 
-    .avatar {
-      width: 88px;
-      height: 88px;
-      border-radius: 50%;
-      border: 1px solid #262626;
-      background: #0A0A0A;
-      object-fit: cover;
-      margin-bottom: 18px;
+    .logo-container {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-img {
+      max-width: 170px;
+      height: 52px;
+      object-fit: contain;
       display: block;
     }
 
-    .title {
-      font-size: 20px;
+    .person-name {
+      font-size: 21px;
       font-weight: 700;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
       color: #FFFFFF;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
+      text-transform: uppercase;
     }
 
-    .subtitle {
+    .person-role {
       font-size: 13px;
-      color: #737373;
+      color: #888888;
       font-weight: 400;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
 
-    /* Links List */
+    /* Links Section */
     .links {
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin-bottom: 28px;
+      gap: 10px;
+      margin-bottom: 24px;
     }
 
     .link-item {
@@ -85,10 +91,10 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      padding: 14px 18px;
+      padding: 13px 16px;
       background: #0A0A0A;
       border: 1px solid #1C1C1C;
-      border-radius: 14px;
+      border-radius: 13px;
       text-decoration: none;
       color: #FFFFFF;
       transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
@@ -103,13 +109,14 @@
     .link-left {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 13px;
+      min-width: 0;
     }
 
     .link-icon {
       width: 36px;
       height: 36px;
-      border-radius: 10px;
+      border-radius: 9px;
       background: #121212;
       border: 1px solid #222222;
       display: flex;
@@ -121,18 +128,25 @@
 
     .link-text {
       text-align: left;
+      min-width: 0;
     }
 
     .link-name {
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 600;
       color: #FFFFFF;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .link-sub {
       font-size: 12px;
       color: #737373;
       margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .link-arrow {
@@ -150,25 +164,25 @@
     .actions-row {
       width: 100%;
       display: flex;
-      gap: 10px;
-      margin-bottom: 36px;
+      gap: 8px;
+      margin-bottom: 32px;
     }
 
     .btn-action {
       flex: 1;
-      padding: 12px;
+      padding: 11px 8px;
       background: #0A0A0A;
       border: 1px solid #1C1C1C;
-      border-radius: 12px;
+      border-radius: 11px;
       color: #A3A3A3;
       font-family: inherit;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 500;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      gap: 6px;
       transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
       text-decoration: none;
     }
@@ -228,10 +242,11 @@
     }
 
     .modal-title {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
       color: #FFFFFF;
       letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
 
     .modal-tabs {
@@ -251,7 +266,7 @@
       background: transparent;
       color: #737373;
       font-family: inherit;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 500;
       border-radius: 7px;
       cursor: pointer;
@@ -268,7 +283,7 @@
       padding: 14px;
       border-radius: 14px;
       display: inline-block;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .qr-frame img {
@@ -356,13 +371,33 @@
   <div class="container">
     <!-- Profile -->
     <header class="profile">
-      <img src="logo.png" alt="AR ROAD LINE" class="avatar">
-      <h1 class="title">AR ROAD LINE</h1>
-      <p class="subtitle">Logistics Company</p>
+      <div class="logo-container">
+        <img src="logo.png" alt="AR ROAD LINE" class="logo-img">
+      </div>
+      <h1 class="person-name">ABDUMAJID RASHIDOV</h1>
+      <p class="person-role">Firma rahbari &bull; AR ROAD LINE</p>
     </header>
 
     <!-- Monochrome Minimal Links -->
     <main class="links">
+      <!-- Telegram Admin / Personal -->
+      <a href="https://t.me/AR_Road_Line_admin" target="_blank" rel="noopener noreferrer" class="link-item">
+        <div class="link-left">
+          <div class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <div class="link-text">
+            <div class="link-name">Telegram Admin</div>
+            <div class="link-sub">@AR_Road_Line_admin</div>
+          </div>
+        </div>
+        <div class="link-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </div>
+      </a>
+
       <!-- Telegram Channel -->
       <a href="https://t.me/Ar_road_line" target="_blank" rel="noopener noreferrer" class="link-item">
         <div class="link-left">
@@ -374,24 +409,6 @@
           </div>
           <div class="link-text">
             <div class="link-name">Telegram Kanal</div>
-            <div class="link-sub">@Ar_road_line</div>
-          </div>
-        </div>
-        <div class="link-arrow">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-        </div>
-      </a>
-
-      <!-- Telegram Profile -->
-      <a href="https://t.me/Ar_road_line" target="_blank" rel="noopener noreferrer" class="link-item">
-        <div class="link-left">
-          <div class="link-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-            </svg>
-          </div>
-          <div class="link-text">
-            <div class="link-name">Telegram Aloqa</div>
             <div class="link-sub">@Ar_road_line</div>
           </div>
         </div>
@@ -420,8 +437,8 @@
         </div>
       </a>
 
-      <!-- Phone Call -->
-      <a href="tel:+998888321661" class="link-item">
+      <!-- Phone 1 (Primary) -->
+      <a href="tel:+998998390473" class="link-item">
         <div class="link-left">
           <div class="link-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -429,8 +446,45 @@
             </svg>
           </div>
           <div class="link-text">
-            <div class="link-name">Telefon</div>
-            <div class="link-sub">+998 88 832 16 61</div>
+            <div class="link-name">+998 99 839 04 73</div>
+            <div class="link-sub">Qo'ng'iroq qilish</div>
+          </div>
+        </div>
+        <div class="link-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </div>
+      </a>
+
+      <!-- Phone 2 -->
+      <a href="tel:+998500030026" class="link-item">
+        <div class="link-left">
+          <div class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div class="link-text">
+            <div class="link-name">+998 50 003 00 26</div>
+            <div class="link-sub">Qo'ng'iroq qilish</div>
+          </div>
+        </div>
+        <div class="link-arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </div>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:ar.roadline.uz@gmail.com" class="link-item">
+        <div class="link-left">
+          <div class="link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="link-text">
+            <div class="link-name">Elektron pochta</div>
+            <div class="link-sub">ar.roadline.uz@gmail.com</div>
           </div>
         </div>
         <div class="link-arrow">
@@ -439,7 +493,7 @@
       </a>
 
       <!-- Location -->
-      <a href="https://maps.google.com/?q=Bobur+shoh+ko'chasi+73A+Andijon" target="_blank" rel="noopener noreferrer" class="link-item">
+      <a href="https://maps.google.com/?q=Andijon+tumani+Oltin+vodiy+ko'chasi+Eski+XTP" target="_blank" rel="noopener noreferrer" class="link-item">
         <div class="link-left">
           <div class="link-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -449,7 +503,7 @@
           </div>
           <div class="link-text">
             <div class="link-name">Manzil</div>
-            <div class="link-sub">Andijon, Bobur shoh ko'chasi, 73A</div>
+            <div class="link-sub">Andijon tumani, Oltin vodiy ko'chasi, Eski XTP</div>
           </div>
         </div>
         <div class="link-arrow">
@@ -460,8 +514,8 @@
 
     <!-- Minimal Action Buttons -->
     <div class="actions-row">
-      <button class="btn-action" onclick="openQrModal('telegram')">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button class="btn-action" onclick="openQrModal('admin')">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <rect x="3" y="3" width="7" height="7"></rect>
           <rect x="14" y="3" width="7" height="7"></rect>
           <rect x="14" y="14" width="7" height="7"></rect>
@@ -471,7 +525,7 @@
       </button>
 
       <button class="btn-action" onclick="downloadVCard()">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
           <polyline points="17 21 17 13 7 13 7 21"></polyline>
           <polyline points="7 3 7 8 15 8"></polyline>
@@ -480,7 +534,7 @@
       </button>
 
       <button class="btn-action" onclick="copyLink()">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
           <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
         </svg>
@@ -500,18 +554,19 @@
       <h3 class="modal-title">QR KOD</h3>
 
       <div class="modal-tabs">
-        <button class="modal-tab active" id="tabTg" onclick="switchTab('telegram')">Telegram</button>
+        <button class="modal-tab active" id="tabAdmin" onclick="switchTab('admin')">Admin</button>
+        <button class="modal-tab" id="tabChannel" onclick="switchTab('channel')">Kanal</button>
         <button class="modal-tab" id="tabIg" onclick="switchTab('instagram')">Instagram</button>
       </div>
 
       <div class="qr-frame">
-        <img id="qrImg" src="qr_telegram.png" alt="QR Code">
+        <img id="qrImg" src="qr_admin.png" alt="QR Code">
       </div>
 
-      <div class="qr-url" id="qrUrl">https://t.me/Ar_road_line</div>
+      <div class="qr-url" id="qrUrl">https://t.me/AR_Road_Line_admin</div>
 
       <div class="modal-buttons">
-        <a id="btnDownload" href="qr_telegram.png" download="ar_road_line_telegram.png" class="btn-download-white">
+        <a id="btnDownload" href="qr_admin.png" download="ar_road_line_admin_qr.png" class="btn-download-white">
           PNG yuklab olish
         </a>
         <button class="btn-close" onclick="closeQrModal()">Yopish</button>
@@ -523,9 +578,13 @@
 
   <script>
     const qrConfig = {
-      telegram: {
+      admin: {
+        url: 'https://t.me/AR_Road_Line_admin',
+        png: 'qr_admin.png'
+      },
+      channel: {
         url: 'https://t.me/Ar_road_line',
-        png: 'qr_telegram.png'
+        png: 'qr_channel.png'
       },
       instagram: {
         url: 'https://www.instagram.com/ar_road_line',
@@ -533,7 +592,7 @@
       }
     };
 
-    function openQrModal(type = 'telegram') {
+    function openQrModal(type = 'admin') {
       switchTab(type);
       document.getElementById('qrModal').classList.add('active');
     }
@@ -547,7 +606,8 @@
     }
 
     function switchTab(type) {
-      document.getElementById('tabTg').classList.toggle('active', type === 'telegram');
+      document.getElementById('tabAdmin').classList.toggle('active', type === 'admin');
+      document.getElementById('tabChannel').classList.toggle('active', type === 'channel');
       document.getElementById('tabIg').classList.toggle('active', type === 'instagram');
       const data = qrConfig[type];
       document.getElementById('qrImg').src = data.png;
@@ -567,7 +627,7 @@
     function copyLink() {
       if (navigator.share) {
         navigator.share({
-          title: 'AR ROAD LINE',
+          title: 'ABDUMAJID RASHIDOV — AR ROAD LINE',
           url: window.location.href
         }).catch(() => {});
       } else {
@@ -581,17 +641,23 @@
       const vcard = 
 `BEGIN:VCARD
 VERSION:3.0
-FN:AR ROAD LINE
+FN:Abdumajid Rashidov
+N:Rashidov;Abdumajid;;;
 ORG:AR ROAD LINE
-TEL;TYPE=CELL,VOICE:+998888321661
-ADR;TYPE=WORK:;;Bobur shoh ko'chasi 73A;Andijon;;;Uzbekistan
-URL:https://t.me/Ar_road_line
+TITLE:Firma rahbari
+TEL;TYPE=CELL,VOICE;TYPE=PREF:+998998390473
+TEL;TYPE=WORK,VOICE:+998500030026
+EMAIL;TYPE=WORK:ar.roadline.uz@gmail.com
+ADR;TYPE=WORK:;;Oltin vodiy ko'chasi, Eski XTP binosi;Andijon tumani;;;Uzbekistan
+URL;TYPE=Telegram:https://t.me/AR_Road_Line_admin
+URL;TYPE=Instagram:https://www.instagram.com/ar_road_line
+NOTE:AR ROAD LINE - Firma rahbari
 END:VCARD`;
       const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8;' });
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'AR_ROAD_LINE.vcf');
+      link.setAttribute('download', 'Abdumajid_Rashidov_AR_Road_Line.vcf');
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
